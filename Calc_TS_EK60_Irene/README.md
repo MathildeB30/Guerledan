@@ -21,16 +21,3 @@ Chemins d'accès : Définition des répertoires d'entrée (fichiers .raw) et de 
 Type de données : Choix du niveau de normalisation souhaité (TS ou Sv).
 
 Paramètres d'export : Sélection du format de fichier final (.mat ou .npz) et définition du radical des noms de fichiers.
-
-
-Flux de traitement
-
-Le script suit une logique de traitement rigoureuse :
-
-Lecture du flux binaire Simrad.
-
-Synchronisation des données de mouvement par interpolation sur les pings.
-
-Application des gains de calibration.
-
-Visualisation optionnelle pour validation avant l'exportation finale.
