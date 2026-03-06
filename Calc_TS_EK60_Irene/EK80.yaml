@@ -1,0 +1,65 @@
+---
+
+    # Normalisation des données en TS, SV ou données brutes (puissance reçue)
+    q_normalize: "TS" # "SV"  # "TS", "SV" ou null
+
+    # Visualisation des données
+    q_visu: True  # true ou false
+
+    # Lecture des angles d'arrivées des échos: true ou false
+    q_angle: True
+    
+
+    # Palette de couleur pour la visualisation de l'amplitude
+    # (si visualisation)
+    colormap: "simrad" # Une des couleurs de Matplotlib ou "simrad"
+
+    # Valeurs des bornes de la colorbar si visualisation
+    colorbar_lim:  [-80, null]  # null, [null, v_max], [v_min, null],
+    # ou [v_min, v_max]
+
+    # Format de sortie
+    q_export: ".npz"  # null ou format ".npz" (python) ou format ".mat" (Matlab)
+
+    # Affichage d'informations de lecture du fichier
+    #  null, "xml set", "xml", "xml raw", "nmea", "nmea set"
+    q_debug: null
+    
+    # Répertoire d'entrée par défaut
+    directory_in: "EK60_Ulysse/Fevrier/DATA"
+
+    
+    # Répertoire de sortie par défaut
+    directory_out:  "."
+
+
+    # Radical du fichier de sortie
+    radix_out: "export"
+    
+
+    # Liste des fichiers par défaut (chaine de caractère ou liste de chaines
+    # de caractères) 
+    filelist:
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T221240.raw"
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T221517.raw"
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T222805.raw"
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T224211.raw"
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T225358.raw"
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T225816.raw"
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T230029.raw"
+      - "Guerledan_fevrier2026_Etu_ColonneDeau-D20260203-T230353.raw"
+      #- "ulyfish_guerledan_octobre2025_LigneEtu-D20251007-T134646.raw"
+      #- "ulyfish_guerledan_octobre2025_LigneEtu2-D20251007-T141244.raw"
+      #- "ulyfish_guerledan_octobre2025_LigneEtu3-D20251007-T143818.raw"
+      
+    # numéro du premier ping à prendre en compte (à partir de 0 ou null)
+    ping0: null
+
+    # nombre de pings à lire (null si jusqu'à la fin) par fichier de sortie
+    n_ping: null
+
+    # on écrit un seul fichier ou la totalité ?
+    q_iterate: true
+    
+...
+
